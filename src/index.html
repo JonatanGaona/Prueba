@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PruebaTecnicaFront</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link type="text/css" href="styles.css" >
+</head>
+<body>
+  <div>
+    
+    <div id="contenido">
+     
+    </div>
+
+  </div>
+  <div class="stars">
+    <span  data-value="1" title="Vote with 1 star" id="1star" onclick="calificar(this)">&#9733;</span>
+    <span data-value="2" title="Vote with 2 stars" id="2star" onclick="calificar(this)">&#9733;</span>
+    <span data-value="3" title="Vote with 3 stars" id="3star" onclick="calificar(this)">&#9733;</span>
+    <span data-value="4" title="Vote with 4 stars" id="4star" onclick="calificar(this)">&#9733;</span>
+    <span data-value="5" title="Vote with 5 stars" id="5star" onclick="calificar(this)">&#9733;</span>
+    
+    <br><br>
+    <button onclick="Mensaje()">Qualify</button>
+  </div>
+  
+</body>
+<script>
+  var contenido = document.querySelector('#contenido')
+  
+    fetch('https://xkcd.com/info.0.json') 
+    .then(response => response.json())
+    .then(data =>{
+      console.log(data)
+      contenido.innerHTML = ` 
+      <h1>Comic title: ${data.title} </h1>
+      <br> 
+      <img src="${data.img}" width="350px"> 
+      <br>
+      <p><strong>Description of the comic:</strong> ${data.alt}</p>
+      <p><strong>This comic is the number: </strong>${data.num}, que fue publicado el ${data.day}/${data.month}/${data.year}.</p>
+      <p> Did you like this comic? We would like you to give us your rating below</p>
+
+        `
+    })
+  var contador;
+  function calificar(item){
+    console.log(item);
+    contador=item.id[0];
+    let nombre = item.id.substring(1);
+    for(let i=0;i<5;i++){
+      if(i<contador){
+        document.getElementById((i+1)+nombre).style.color="orange";
+      }else{
+        document.getElementById((i+1)+nombre).style.color="white";
+      }
+    }
+  }
+  function Mensaje(){
+    alert("Thanks for rating our comic with "+ contador+ " stars.")
+  }
+
+</script>
+</html>
