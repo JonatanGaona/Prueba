@@ -1,27 +1,15 @@
-# PruebaTecnicaFront
+Prueba Tecnica Front
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+Buen día, espero se encuentren bien. 
+Este proyecto fue realizado con angular, para poder abrir, y comprobar la prueba, es necesario descargar todos los archivos que se encuentran.
 
-## Development server
+(Para poder visualizar correctamente la pagina, es necesario tener instalada la siguiente extencion de chrome, debido a que la api, presenta problemas de CROS POLITICAL. 
+https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc 
+Despues de instalarla, activarla para visualizarla correctamente la pagina.)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Una vez descargados todos los archivos, abrir el index que se encuentra dentro de la carpeta src, y una vez abierto, se podra visualizar la informacion de la api. 
+Para "interactuar", simplemente debe calificar el comic, haciendo click en la cantidad de estrellas que desee dar, si quiere votar por 3, pues da click sobre la tercera estrella y oprime el boton "Qualify", este le arrojara un mensaje con su voto. 
 
-## Code scaffolding
+El codigo fue realizado en html, javascript, y css.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Muchas gracias.
