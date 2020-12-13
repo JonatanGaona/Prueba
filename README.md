@@ -12,4 +12,4 @@ Para "interactuar", simplemente debe calificar el comic, haciendo click en la ca
 
 El codigo fue realizado en html, javascript, y css.
 
-Muchas gracias.
+Gracias.
